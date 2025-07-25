@@ -3,13 +3,13 @@
 
 <p align="center">
   <a href="https://golang.org/doc/go1.14">
-    <img alt="Go" src="https://img.shields.io/github/go-mod/go-version/cdkini/Okra?style=flat-square"
+    <img alt="Go" src="https://img.shields.io/github/go-mod/go-version/cdkini/Okra?style=flat-square" />
   </a> 
   <a href="https://opensource.org/licenses/MIT">
-    <img alt="License" src="https://img.shields.io/github/license/cdkini/Okra?color=red&style=flat-square"
+    <img alt="License" src="https://img.shields.io/github/license/cdkini/Okra?color=red&style=flat-square" />
   </a>
   <a>
-    <img alt="StoryTEL" src="https://img.shields.io/badge/version-v1.0.0-yellow?style=flat-square"
+    <img alt="StoryTEL" src="https://img.shields.io/badge/version-v1.0.0-yellow?style=flat-square" />
   </a>
 </p>
 
