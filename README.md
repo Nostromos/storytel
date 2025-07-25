@@ -38,7 +38,7 @@ go build -o storytel ./cmd/storytel
 
 Run the application:
 ```bash
-./cyoa
+./storytel
 ```
 
 ### Controls
@@ -57,7 +57,7 @@ Run the application:
 
 Stories are stored as JSON files in the `stories/` directory. Each story follows this structure:
 
-```json
+```json`
 {
   "chapter-name": {
     "title": "Chapter Title",
