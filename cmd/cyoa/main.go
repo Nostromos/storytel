@@ -1,62 +1,18 @@
 package main
 
 import (
-	"html/template"
-	"net/http"
+	"fmt"
+	"os"
 
-	"github.com/Nostromos/cyoa/parser"
-	"github.com/Nostromos/cyoa/handler"
-)
+	tea "github.com/charmbracelet/bubbletea"
 
-const tpl = `<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>{{.Title}}</title>
-  <style>
-    .option-button {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      margin: 5px;
-    }
-  </style>
-</head>
-<body>
-  <h1>{{.Title}}</h1>
-  <div>
-    {{range .Story}}
-      <p>{{.}}</p>
-    {{end}}
-  </div>
-  <div>
-    {{range .Options}}
-      <button class="option-button" onclick="window.location.href='{{printf "/%s" .Arc}}'">
-        {{.Text}}
-      </button>
-    {{end}}
-  </div>
-</body>
-</html>`
-
-const (
-	defaultStoryPath = "./gopher.json"
+	"github.com/Nostromos/cyoa/pkg/tui"
 )
 
 func main() {
-	// load our story
-	story, err := parser.loadStory(defaultStoryPath)
-
-	// parse our template
-	templ, err := template.New("story").Parse(tpl)
-	if err != nil {
-		panic(err)
+	p := tea.NewProgram(tui.InitialModel(), tea.WithAltScreen())
+	if _, err := p.Run(); err != nil {
+		fmt.Printf("Alas, there's been an error: %v", err)
+		os.Exit(1)
 	}
-
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		
-	})
 }

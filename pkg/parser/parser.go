@@ -3,33 +3,22 @@ package parser
 import (
 	"encoding/json"
 	"os"
+
+	"github.com/Nostromos/cyoa/pkg/types"
 )
 
-type Option struct {
-	Text string `json:"text"`
-	Arc  string `json:"arc"`
-}
-
-type Arc struct {
-	Title   string   `json:"title"`
-	Story   []string `json:"story"`
-	Options []Option `json:"options"`
-}
-
-type Storybook map[string]Arc
-
-func LoadStory(filePath string) (Storybook, error) {
+func LoadStory(filePath string) (types.Storybook, error) {
 	file, err := os.Open(filePath)
 	if err != nil {
 		panic(err)
 	}
 	defer file.Close()
 
-	var story Storybook
-	err = json.NewDecoder(file).Decode(&story)
+	var storybook types.Storybook
+	err = json.NewDecoder(file).Decode(&storybook)
 	if err != nil {
 		panic(err)
 	}
 
-	return story, nil
+	return storybook, nil
 }

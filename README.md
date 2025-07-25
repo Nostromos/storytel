@@ -34,8 +34,7 @@ Stories will be provided via a JSON file with the following format:
         "arc": "the name of the story arc to navigate to. This will match the story-arc key at the very root of the JSON document"
       }
     ]
-  },
-  ...
+  }
 }
 ```
 
