@@ -1,0 +1,252 @@
+{
+  "intro": {
+    "title": "The Time-Traveling Tunnel",
+    "story": [
+      "While helping your gopher friend dig a new tunnel in your backyard, his shovel hits something unusual - a glowing, ancient-looking device buried deep in the earth.",
+      "As soon as your friend touches it, the device activates, creating a shimmering portal in the tunnel wall. Through it, you can see glimpses of different time periods flashing by.",
+      "Your gopher friend's eyes widen with excitement and a little fear. 'Should we... should we go through?' he asks, his whiskers twitching nervously."
+    ],
+    "options": [
+      {
+        "text": "Adventure awaits! Let's jump through and see where it takes us!",
+        "arc": "jump-through"
+      },
+      {
+        "text": "Let's study the device first and try to understand how it works.",
+        "arc": "study-device"
+      },
+      {
+        "text": "This seems dangerous. We should contact someone who knows about these things.",
+        "arc": "seek-expert"
+      }
+    ]
+  },
+  "jump-through": {
+    "title": "Prehistoric Surprise",
+    "story": [
+      "You and your gopher friend hold hands (and paws) and leap through the portal. After a dizzying moment, you find yourselves in a lush, prehistoric jungle.",
+      "Giant ferns tower above you, and in the distance, you hear sounds unlike anything from your time. Your gopher friend sniffs the air and squeaks, 'I smell... really, really big carrots!'",
+      "Suddenly, the ground shakes. Through the trees, you see a friendly-looking dinosaur approaching. It seems curious about you two strange visitors."
+    ],
+    "options": [
+      {
+        "text": "Try to communicate with the dinosaur - maybe it can help us!",
+        "arc": "dino-friend"
+      },
+      {
+        "text": "We should find the portal device and get back home quickly!",
+        "arc": "find-way-back"
+      },
+      {
+        "text": "Let's explore and look for those giant carrots your friend smelled!",
+        "arc": "prehistoric-feast"
+      }
+    ]
+  },
+  "study-device": {
+    "title": "Scientific Approach",
+    "story": [
+      "You carefully examine the device. It appears to be made of a metal you don't recognize, covered in strange symbols that seem to shift and change as you look at them.",
+      "Your gopher friend, being naturally good at digging and finding things, discovers more pieces of the device buried nearby. When assembled, they form what looks like a control panel.",
+      "After some experimentation, you figure out how to set specific time periods. The portal stabilizes, showing a clear view of your chosen destination."
+    ],
+    "options": [
+      {
+        "text": "Let's visit the future and see what becomes of gophers!",
+        "arc": "future-visit"
+      },
+      {
+        "text": "The past seems safer. How about visiting the age of knights and castles?",
+        "arc": "medieval-times"
+      },
+      {
+        "text": "Actually, let's stay in our time and report this discovery to scientists.",
+        "arc": "share-discovery"
+      }
+    ]
+  },
+  "seek-expert": {
+    "title": "Professional Help",
+    "story": [
+      "You contact Dr. Hedgehog, a local scientist who specializes in unusual phenomena. She arrives quickly, her spines quivering with excitement when she sees the portal.",
+      "'Fascinating!' she exclaims. 'This appears to be an ancient time travel device, possibly left by a civilization that predates recorded history!'",
+      "Dr. Hedgehog helps you understand the device's controls and safety features. She also gives you a special beacon that will always guide you back to your own time."
+    ],
+    "options": [
+      {
+        "text": "With expert guidance, let's explore the timestream safely!",
+        "arc": "guided-journey"
+      },
+      {
+        "text": "Ask Dr. Hedgehog to join us on a time travel adventure!",
+        "arc": "team-adventure"
+      }
+    ]
+  },
+  "dino-friend": {
+    "title": "An Unlikely Alliance",
+    "story": [
+      "Using gestures and your gopher friend's natural charm, you manage to befriend the dinosaur. It turns out to be a young Parasaurolophus who loves to collect shiny objects.",
+      "The dinosaur shows you its collection, and among the treasures, you spot another glowing device similar to yours! Your new friend indicates it fell from the sky long ago.",
+      "Working together, you figure out how to activate both devices, creating a stable portal home. As a parting gift, the dinosaur gives your gopher friend a beautiful prehistoric gem."
+    ],
+    "options": [
+      {
+        "text": "Time to head home with your new treasure and incredible story!",
+        "arc": "return-home"
+      }
+    ]
+  },
+  "find-way-back": {
+    "title": "Lost in Time",
+    "story": [
+      "You search frantically for the portal, but the prehistoric jungle all looks the same. Just as panic starts to set in, your gopher friend's digging instincts kick in.",
+      "He starts tunneling, following some instinct you don't understand. 'The soil feels different where we arrived,' he explains. Sure enough, his tunnel leads directly to the portal device!",
+      "You've learned an important lesson about time travel - always mark your arrival point! With relief, you step back through the portal to your own time."
+    ],
+    "options": [
+      {
+        "text": "Safe at home, but wiser for the experience.",
+        "arc": "return-home"
+      }
+    ]
+  },
+  "prehistoric-feast": {
+    "title": "Giant Vegetables",
+    "story": [
+      "Following your friend's nose, you discover a valley filled with enormous vegetables. Carrots the size of tree trunks, lettuce leaves you could use as blankets!",
+      "Your gopher friend is in paradise, taking tiny nibbles of the giant produce. 'This is the best day ever!' he squeaks between bites.",
+      "You gather some seeds from the giant plants, thinking they might grow in your own time. Who knows? Maybe you'll start a very interesting garden!"
+    ],
+    "options": [
+      {
+        "text": "Head back with your prehistoric seeds and full bellies.",
+        "arc": "return-home"
+      }
+    ]
+  },
+  "future-visit": {
+    "title": "The World of Tomorrow",
+    "story": [
+      "You emerge in a beautiful futuristic city where nature and technology exist in perfect harmony. To your amazement, you see gophers working alongside humans as equal partners!",
+      "A future gopher, wearing a tiny lab coat, greets you warmly. 'Ah, visitors from the past! Your friend here is a descendant of the great Gopher Ambassador who helped unite our species!'",
+      "Your friend beams with pride as you tour the incredible future. Before leaving, the future gopher gives you a data crystal containing 'important information for your time.'"
+    ],
+    "options": [
+      {
+        "text": "Return home with hope for the future!",
+        "arc": "return-home"
+      }
+    ]
+  },
+  "medieval-times": {
+    "title": "Knights and Burrows",
+    "story": [
+      "You arrive in medieval times, near a grand castle. Your gopher friend is immediately fascinated by the moat. 'Imagine the tunnel system you could build here!' he exclaims.",
+      "You're discovered by a kindly knight who, surprisingly, isn't alarmed by your strange clothes or talking gopher. 'The wizard warned me of visitors from afar,' he says mysteriously.",
+      "The knight shares tales of a dragon problem they've been having. Your gopher friend has an idea - what if they dig tunnels to redirect the nearby river and create a barrier the dragon can't cross?"
+    ],
+    "options": [
+      {
+        "text": "Help solve the dragon problem with modern knowledge!",
+        "arc": "dragon-solution"
+      },
+      {
+        "text": "This is getting too complicated. Let's head home.",
+        "arc": "return-home"
+      }
+    ]
+  },
+  "share-discovery": {
+    "title": "For the Greater Good",
+    "story": [
+      "You decide the responsible thing is to share this discovery with the scientific community. Soon, your backyard becomes a research site with scientists from around the world.",
+      "Your gopher friend becomes famous as the 'Gopher Who Discovered Time Travel.' He handles fame well, always crediting you as his partner in the discovery.",
+      "The time portal leads to incredible advances in history and science. You and your friend are awarded the Nobel Prize for your contribution to human knowledge!"
+    ],
+    "options": [
+      {
+        "text": "Enjoy your fame and the knowledge that you've changed the world!",
+        "arc": "fame-ending"
+      }
+    ]
+  },
+  "guided-journey": {
+    "title": "Scientific Expedition",
+    "story": [
+      "With Dr. Hedgehog's guidance, you take several carefully planned trips through time. You witness the construction of the pyramids, see dinosaurs in their prime, and even peek at possible futures.",
+      "Your gopher friend keeps a detailed journal of all your adventures, which becomes a bestselling book: 'Tunnels Through Time: A Gopher's Guide to History.'",
+      "The controlled expeditions yield valuable scientific data while keeping you safe. You've become official time travel researchers!"
+    ],
+    "options": [
+      {
+        "text": "Continue your career as time travel pioneers!",
+        "arc": "research-ending"
+      }
+    ]
+  },
+  "team-adventure": {
+    "title": "The Time Team",
+    "story": [
+      "Dr. Hedgehog eagerly joins your adventure. Her scientific knowledge combined with your gopher friend's instincts and your courage make an unstoppable team.",
+      "Together, you solve historical mysteries, help people throughout time, and even prevent a few disasters. You become known throughout the timestream as 'The Temporal Trio.'",
+      "Your adventures are legendary, but you always return home for tea and cookies in your backyard, where it all began."
+    ],
+    "options": [
+      {
+        "text": "The perfect ending to a perfect team!",
+        "arc": "team-ending"
+      }
+    ]
+  },
+  "dragon-solution": {
+    "title": "Medieval Heroes",
+    "story": [
+      "Your gopher friend leads a team of medieval diggers in creating an ingenious tunnel system. The redirected river creates a beautiful moat that keeps the dragon at bay while providing water for the castle.",
+      "The grateful kingdom knights both of you. Sir Gopher becomes the first of his kind to receive such an honor! The dragon, unable to attack, eventually becomes peaceful and even friendly.",
+      "Before you leave, the court wizard (who you suspect knows more about time travel than he lets on) gives you a medieval treasure as thanks."
+    ],
+    "options": [
+      {
+        "text": "Return home as heroes of two different times!",
+        "arc": "return-home"
+      }
+    ]
+  },
+  "return-home": {
+    "title": "Home Sweet Home",
+    "story": [
+      "You emerge from the portal back in your backyard, the time-travel devices safely in hand. Your gopher friend carefully places the prehistoric gem in his burrow for safekeeping.",
+      "You both agree to keep the devices hidden and safe, using them only for special adventures. After all, having a time-traveling tunnel is a big responsibility!",
+      "As you sit together watching the sunset, your gopher friend says, 'You know, I think our backyard just became the most interesting place in the universe!'"
+    ],
+    "options": []
+  },
+  "fame-ending": {
+    "title": "Famous Discoverers",
+    "story": [
+      "Your discovery changes the world. Time travel becomes a tool for learning and understanding, helping humanity avoid past mistakes and work toward a better future.",
+      "You and your gopher friend have schools, museums, and even a holiday named after you. But what you treasure most are the quiet evenings in your backyard, planning your next adventure.",
+      "Your friendship has literally transcended time itself, and that's the greatest discovery of all."
+    ],
+    "options": []
+  },
+  "research-ending": {
+    "title": "Professional Time Travelers",
+    "story": [
+      "Your career as time researchers is fulfilling beyond your wildest dreams. Every day brings new discoveries and adventures through history.",
+      "Your gopher friend becomes the world's foremost expert on temporal soil composition, while you specialize in historical documentation. Together, you've unlocked secrets of the ages.",
+      "The portal in your backyard is now protected as a UNESCO World Heritage Site, ensuring future generations can learn from your discovery."
+    ],
+    "options": []
+  },
+  "team-ending": {
+    "title": "Temporal Trio Forever",
+    "story": [
+      "The Temporal Trio becomes legendary throughout time. Stories of your adventures inspire generations in multiple time periods.",
+      "Dr. Hedgehog opens a Time Travel Academy, your gopher friend writes the definitive guide to temporal navigation, and you become the first Ambassador to Past and Future Relations.",
+      "But no matter how famous you become, the three of you still meet every week in your backyard, where the greatest adventure of all - friendship - began."
+    ],
+    "options": []
+  }
+}

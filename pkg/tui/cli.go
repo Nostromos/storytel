@@ -23,7 +23,7 @@ type Model struct {
 
 func InitialModel() Model {
 
-	story, err := parser.LoadStory("./gopher.json")
+	story, err := parser.LoadStory("./stories/timetravel.json")
 	if err != nil {
 		panic(err)
 	}
@@ -144,7 +144,11 @@ func (m Model) View() string {
 	}
 
 	// footer
-	opts += "\nPress q to quit.\n"
+	help := "\nenter - select option | q - quit\n"
+	helpStyle := lipgloss.NewStyle().
+		Foreground(lipgloss.Color("#D3D3D3")).
+		PaddingLeft(2)
+	StyledHelp := helpStyle.Render(help)
 
 	var optionsStyle = lipgloss.NewStyle().
 		Bold(true).
@@ -155,8 +159,8 @@ func (m Model) View() string {
 		PaddingLeft(4).
 		PaddingRight(4)
 
-	var styledOptions = optionsStyle.Render(opts)
+	var StyledOptions = optionsStyle.Render(opts)
 
-	var text = "\n" + StyledTitle + "\n\n" + StyledStory + "\n\n\n" + styledOptions
+	var text = "\n" + StyledTitle + "\n\n" + StyledStory + "\n\n\n" + StyledOptions + "\n" + StyledHelp
 	return text
 }

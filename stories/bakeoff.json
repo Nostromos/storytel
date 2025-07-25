@@ -1,0 +1,199 @@
+{
+  "intro": {
+    "title": "The Great Gopher Bake-Off",
+    "story": [
+      "Your gopher friend bounces excitedly as he shows you a colorful flyer. The Annual Inter-Species Bake-Off is coming to town, and he desperately wants to enter!",
+      "The only problem? Gophers aren't exactly known for their baking skills. Your friend has never even turned on an oven before. But he's determined to prove that gophers can do anything they set their minds to.",
+      "The competition is in three days. You'll need to help your friend learn to bake, gather ingredients, and create something spectacular enough to wow the judges."
+    ],
+    "options": [
+      {
+        "text": "Let's start with something simple - how about chocolate chip cookies?",
+        "arc": "cookie-training"
+      },
+      {
+        "text": "Go big or go home! Let's attempt a three-tier cake!",
+        "arc": "cake-ambition"
+      },
+      {
+        "text": "Maybe we should find a baking mentor first?",
+        "arc": "find-mentor"
+      }
+    ]
+  },
+  "cookie-training": {
+    "title": "Baby Steps",
+    "story": [
+      "You decide to start with the basics. In your kitchen, you teach your gopher friend how to measure ingredients, cream butter and sugar, and properly mix cookie dough.",
+      "His first batch burns to a crisp - he got distracted by a particularly interesting recipe blog. The second batch is raw in the middle. But the third batch? Perfection!",
+      "Your friend beams with pride as he pulls the golden-brown cookies from the oven. 'I did it! I'm a baker!' he exclaims, doing a little victory dance."
+    ],
+    "options": [
+      {
+        "text": "These are great, but we need something more impressive for the competition.",
+        "arc": "level-up"
+      },
+      {
+        "text": "Let's perfect this recipe and add our own special twist!",
+        "arc": "cookie-innovation"
+      }
+    ]
+  },
+  "cake-ambition": {
+    "title": "Aiming High",
+    "story": [
+      "You admire your friend's ambition, but a three-tier cake might be too much for a first-time baker. After a disastrous attempt that looks more like a leaning tower than a cake, you both agree to reassess.",
+      "Your gopher friend isn't discouraged though. 'What if we do something in between?' he suggests. 'Like a really amazing single-layer cake with incredible decorations?'",
+      "You spend the day practicing piping techniques and making fondant. Your friend discovers he has incredibly steady paws - perfect for detailed decoration work!"
+    ],
+    "options": [
+      {
+        "text": "Let's create a nature-themed cake that showcases your decorating skills!",
+        "arc": "nature-cake"
+      },
+      {
+        "text": "We should still find an expert to help us with the recipe.",
+        "arc": "find-mentor"
+      }
+    ]
+  },
+  "find-mentor": {
+    "title": "The Master Baker",
+    "story": [
+      "You visit the local bakery where you meet Chef Beaver, a renowned pastry chef who's won the Bake-Off five years running.",
+      "Chef Beaver looks skeptical at first, but your gopher friend's enthusiasm wins him over. 'I've never trained a gopher before,' he muses, 'but there's a first time for everything!'",
+      "Under Chef Beaver's guidance, your friend learns about measuring ingredients, mixing techniques, and the importance of patience in baking."
+    ],
+    "options": [
+      {
+        "text": "Now that we've learned the basics, let's create our competition entry!",
+        "arc": "create-masterpiece"
+      },
+      {
+        "text": "Ask Chef Beaver about his secret ingredient.",
+        "arc": "secret-ingredient"
+      }
+    ]
+  },
+  "level-up": {
+    "title": "Beyond Cookies",
+    "story": [
+      "Building on your cookie success, you and your gopher friend experiment with more complex recipes. Brownies, muffins, and even a simple tart.",
+      "Each attempt gets better as your friend gains confidence. He develops his own technique for kneading dough with his small but strong paws.",
+      "Finally, inspiration strikes - what about combining all these skills into one show-stopping dessert?"
+    ],
+    "options": [
+      {
+        "text": "Create a dessert sampler platter showcasing all your new skills!",
+        "arc": "sampler-success"
+      }
+    ]
+  },
+  "cookie-innovation": {
+    "title": "The Secret Ingredient",
+    "story": [
+      "Your gopher friend has an idea - what if you add acorns and honey to the cookies? It's a flavor combination from his childhood that his grandmother used to make.",
+      "After several test batches, you perfect the recipe. The cookies are unlike anything you've ever tasted - nutty, sweet, and absolutely delicious.",
+      "You package them beautifully, with each cookie decorated to look like a tiny acorn. They're almost too cute to eat!"
+    ],
+    "options": [
+      {
+        "text": "Enter the competition with your unique Acorn Honey Cookies!",
+        "arc": "competition-day"
+      }
+    ]
+  },
+  "nature-cake": {
+    "title": "Edible Art",
+    "story": [
+      "You create a stunning garden-themed cake. Your gopher friend meticulously crafts fondant flowers, vegetables, and even a tiny edible gopher peeking out from behind a carrot.",
+      "The cake itself is carrot cake (naturally) with cream cheese frosting. The combination of delicious flavor and incredible decoration is sure to impress.",
+      "On competition day, your cake draws gasps of admiration from other contestants and judges alike."
+    ],
+    "options": [
+      {
+        "text": "Present your cake to the judges with confidence!",
+        "arc": "judging-time"
+      }
+    ]
+  },
+  "create-masterpiece": {
+    "title": "The Perfect Recipe",
+    "story": [
+      "With your newfound knowledge, you and your gopher friend decide to create something unique - a Underground Carrot Cake with cream cheese frosting and candied roots!",
+      "The kitchen becomes a flurry of activity. Flour flies, mixers whir, and the sweet smell of baking fills the air. Your gopher friend discovers he has a natural talent for decorating.",
+      "The day of the competition arrives. Your cake stands proudly among the other entries, its intricate gopher tunnel design made from chocolate catching everyone's eye."
+    ],
+    "options": [
+      {
+        "text": "Wait nervously for the judges' decision.",
+        "arc": "judging-time"
+      }
+    ]
+  },
+  "secret-ingredient": {
+    "title": "Wisdom Shared",
+    "story": [
+      "Chef Beaver smiles knowingly. 'The secret ingredient isn't something you add to the recipe,' he says. 'It's the love and joy you put into your baking.'",
+      "Your gopher friend nods seriously, then adds, 'But also, a pinch of cardamom in carrot cake never hurts!' Chef Beaver laughs and agrees.",
+      "Armed with both practical and philosophical wisdom, you feel ready to create something truly special."
+    ],
+    "options": [
+      {
+        "text": "Time to put everything you've learned into practice!",
+        "arc": "create-masterpiece"
+      }
+    ]
+  },
+  "sampler-success": {
+    "title": "Variety is the Spice",
+    "story": [
+      "Your dessert sampler is a hit! The judges love the variety and the skill shown in each different item. Your gopher friend's enthusiasm is infectious as he explains each dessert.",
+      "When they announce the winners, your friend wins 'Most Creative Entry' and a special commendation for 'Outstanding Newcomer'.",
+      "Chef Beaver approaches after the ceremony. 'Would your friend like to apprentice at my bakery?' he asks. Your gopher pal nearly faints with excitement!"
+    ],
+    "options": [
+      {
+        "text": "Celebrate this new beginning in your friend's baking career!",
+        "arc": "bakeoff-victory"
+      }
+    ]
+  },
+  "competition-day": {
+    "title": "The Moment of Truth",
+    "story": [
+      "The competition is fierce, with entries from squirrels, rabbits, and even a very talented raccoon. But your Acorn Honey Cookies stand out for their originality.",
+      "The judges are intrigued by the unique flavor combination and charmed by your gopher friend's enthusiastic presentation about his grandmother's recipe.",
+      "When the results are announced, you win the 'Heritage Recipe' category! Your friend clutches the ribbon, tears of joy in his eyes."
+    ],
+    "options": [
+      {
+        "text": "Take a victory photo and plan your next baking adventure!",
+        "arc": "bakeoff-victory"
+      }
+    ]
+  },
+  "judging-time": {
+    "title": "And the Winner Is...",
+    "story": [
+      "The judges taste each entry carefully, making notes on their clipboards. When they reach your cake, their eyes widen with delight.",
+      "After what feels like hours, the head judge steps up to the microphone. 'For creativity, technique, and incredible flavor, the winner is... the Underground Carrot Cake by Team Gopher!'",
+      "Your friend jumps so high with joy that he almost hits the ceiling. As he accepts the golden whisk trophy, he whispers, 'We make a great team!'"
+    ],
+    "options": [
+      {
+        "text": "Bask in your sweet victory!",
+        "arc": "bakeoff-victory"
+      }
+    ]
+  },
+  "bakeoff-victory": {
+    "title": "Sweet Success",
+    "story": [
+      "News of your friend's baking success spreads throughout the animal community. Soon, he's getting requests for birthday cakes and special occasion treats.",
+      "He opens a small bakery called 'The Gopher Hole' where all species are welcome. The Acorn Honey Cookies become his signature item.",
+      "As you help him hang the 'Grand Opening' sign, your friend gives you a huge hug. 'I never thought a gopher could be a baker, but you believed in me. Thank you for being the best friend ever!'"
+    ],
+    "options": []
+  }
+}

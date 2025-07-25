@@ -1,0 +1,171 @@
+{
+  "intro": {
+    "title": "The Mystery of the Lost Repository",
+    "story": [
+      "One morning, you wake up to find your gopher friend in a panic. His favorite open-source project has vanished from the internet! The repository that held years of collaborative work is nowhere to be found.",
+      "Your gopher friend explains that the project was crucial for the gopher community - it contained tools that helped gophers build their burrows more efficiently. Without it, many gophers will struggle with their construction projects.",
+      "There are rumors about what happened. Some say it was accidentally deleted during a server migration. Others whisper about a rival community of moles who might have sabotaged it. There's even talk of a mysterious figure known only as 'The Archivist' who collects lost code."
+    ],
+    "options": [
+      {
+        "text": "Let's investigate the server migration theory - maybe we can recover it from backups!",
+        "arc": "server-investigation"
+      },
+      {
+        "text": "The mole conspiracy sounds intriguing. Time to go underground and ask some questions.",
+        "arc": "mole-conspiracy"
+      },
+      {
+        "text": "This 'Archivist' character sounds like they might know something. Let's track them down.",
+        "arc": "find-archivist"
+      }
+    ]
+  },
+  "server-investigation": {
+    "title": "Digital Detective Work",
+    "story": [
+      "You and your gopher friend head to the data center where the servers are housed. The building is massive, with rows upon rows of blinking lights and humming machines.",
+      "After some smooth talking (and a box of donuts for the security guard), you gain access to the server logs. Your gopher friend's tiny paws fly across the keyboard as he searches through terabytes of data.",
+      "Suddenly, he squeaks with excitement! He's found traces of the repository in an old backup system. But there's a problem - the backup is encrypted, and you need the key."
+    ],
+    "options": [
+      {
+        "text": "Try to crack the encryption using your combined programming skills.",
+        "arc": "crack-encryption"
+      },
+      {
+        "text": "Search for the system administrator who might have the encryption key.",
+        "arc": "find-admin"
+      }
+    ]
+  },
+  "mole-conspiracy": {
+    "title": "Underground Investigation",
+    "story": [
+      "You follow your gopher friend into a network of tunnels beneath the city. The underground community is bustling with activity - rabbits, moles, and even a few badgers going about their business.",
+      "After asking around, you're directed to a shadowy mole bar called 'The Dirty Spade'. Inside, the atmosphere is tense. Several moles eye you suspiciously as you enter.",
+      "The bartender, a gruff old mole with one eye, leans in close. 'You're asking dangerous questions,' he whispers. 'But I might know something... for the right price.'"
+    ],
+    "options": [
+      {
+        "text": "Offer to trade information - maybe they need help with their own tech problems.",
+        "arc": "mole-trade"
+      },
+      {
+        "text": "This feels like a trap. Let's get out of here and try another approach.",
+        "arc": "escape-moles"
+      }
+    ]
+  },
+  "find-archivist": {
+    "title": "The Mysterious Collector",
+    "story": [
+      "Your search for The Archivist leads you to an old library on the outskirts of town. The building looks abandoned, but your gopher friend's keen nose detects recent activity.",
+      "Inside, you discover a vast collection of old computers, servers, and backup drives. Everything is meticulously organized and labeled. This is definitely The Archivist's lair.",
+      "A figure emerges from the shadows - an elderly owl wearing thick glasses. 'I've been expecting you,' she hoots. 'Yes, I have your repository. But knowledge this valuable doesn't come free.'"
+    ],
+    "options": [
+      {
+        "text": "Ask what The Archivist wants in exchange for the repository.",
+        "arc": "archivist-deal"
+      },
+      {
+        "text": "Try to convince her that the repository belongs to the community.",
+        "arc": "convince-archivist"
+      }
+    ]
+  },
+  "crack-encryption": {
+    "title": "Code Breaking",
+    "story": [
+      "You and your gopher friend work through the night, trying different approaches to break the encryption. Empty coffee cups pile up around you.",
+      "Just as you're about to give up, your gopher friend remembers something - the original developer always used references to famous gopher holes in their passwords!",
+      "With this clue, you successfully decrypt the backup and recover the lost repository. The gopher community rejoices as their valuable tools are restored!"
+    ],
+    "options": [
+      {
+        "text": "Time to celebrate with a well-deserved rest.",
+        "arc": "mystery-solved"
+      }
+    ]
+  },
+  "find-admin": {
+    "title": "The Helpful Admin",
+    "story": [
+      "You track down the system administrator, a friendly beaver named Bob, at a local coffee shop. He's horrified to learn about the missing repository.",
+      "'Oh no! That must have been my mistake during the migration!' Bob exclaims. 'But don't worry, I always keep extra backups. Let me get my emergency USB drive.'",
+      "Bob helps you restore the repository from his personal backup. Crisis averted! Your gopher friend does a happy dance as the code comes back online."
+    ],
+    "options": [
+      {
+        "text": "Thank Bob and celebrate the successful recovery.",
+        "arc": "mystery-solved"
+      }
+    ]
+  },
+  "mole-trade": {
+    "title": "Underground Deal",
+    "story": [
+      "The moles admit they didn't steal the repository, but they know who did - a rogue badger who's been hoarding code to sell on the dark web.",
+      "In exchange for your help setting up their own version control system, they give you the badger's location and a plan to recover the stolen code.",
+      "The confrontation with the badger is tense, but when faced with the united front of gophers and moles working together, he reluctantly returns the repository."
+    ],
+    "options": [
+      {
+        "text": "Return the repository to its rightful place online.",
+        "arc": "mystery-solved"
+      }
+    ]
+  },
+  "escape-moles": {
+    "title": "A Narrow Escape",
+    "story": [
+      "You and your gopher friend make a hasty exit from the mole bar. As you emerge from the tunnels, your friend suggests a new approach.",
+      "'Maybe we were thinking about this wrong,' he says. 'What if the repository wasn't stolen or deleted? What if it was just moved?'",
+      "Following this hunch, you discover the repository was simply migrated to a new platform with a different URL. A simple redirect later, and everything is back to normal!"
+    ],
+    "options": [
+      {
+        "text": "Laugh about the wild goose chase and head home.",
+        "arc": "mystery-solved"
+      }
+    ]
+  },
+  "archivist-deal": {
+    "title": "The Exchange",
+    "story": [
+      "The Archivist wants something unusual - she's been searching for the source code to an ancient gopher game that was thought to be lost forever.",
+      "Your gopher friend's eyes light up. 'My grandmother might have that! She never throws anything away!' Sure enough, after a quick trip to Grandma Gopher's burrow, you return with the game.",
+      "The Archivist is delighted. She not only returns your repository but also gives you access to her entire archive. 'For friends of digital preservation,' she says with a wink."
+    ],
+    "options": [
+      {
+        "text": "Accept her generous offer and restore the repository.",
+        "arc": "mystery-solved"
+      }
+    ]
+  },
+  "convince-archivist": {
+    "title": "A Change of Heart",
+    "story": [
+      "You passionately explain how the repository helps gophers all over the world build better homes and communities. Your gopher friend adds personal stories of families helped by the code.",
+      "The Archivist's expression softens. 'I... I didn't realize. I've been so focused on preserving code that I forgot why it matters - to help others.'",
+      "She returns the repository immediately and offers to help maintain backups for the community. 'No code should be lost again,' she declares."
+    ],
+    "options": [
+      {
+        "text": "Thank The Archivist and restore the repository.",
+        "arc": "mystery-solved"
+      }
+    ]
+  },
+  "mystery-solved": {
+    "title": "Case Closed",
+    "story": [
+      "The repository is back online, and gophers everywhere can continue their building projects. Your friend is hailed as a hero in the gopher community.",
+      "As a thank you, the community gifts you both lifetime supplies of your favorite snacks and a special badge that reads 'Digital Detective Extraordinaire'.",
+      "Your gopher friend grins and says, 'Same time next week for another adventure?'"
+    ],
+    "options": []
+  }
+}
