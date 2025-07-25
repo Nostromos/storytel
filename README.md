@@ -31,7 +31,7 @@ Many thanks to [Claude](https://www.anthropic.com/claude-code) for writing [The 
 ## Installation
 
 ```bash
-go build -o cyoa ./cmd/cyoa
+go build -o storytel ./cmd/storytel
 ```
 
 ## Usage
@@ -86,13 +86,15 @@ Stories are stored as JSON files in the `stories/` directory. Each story follows
 
 ```
 .
-├── cmd/cyoa/          # Main application entry point
+├── cmd/storytel/      # Main application entry point
 ├── pkg/
 │   ├── parser/        # JSON story parser
 │   ├── tui/           # Terminal UI components
 │   └── types/         # Shared type definitions
 └── stories/           # Story JSON files
 ```
+> [!NOTE]
+> `handler/` and `story/` folders are non-functional for now. The original version of this exercise required you to generate and serve templated HTML but I had way more fun with BubbleTea.
 
 ## Dependencies
 
