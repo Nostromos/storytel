@@ -19,6 +19,8 @@
 
 StoryTEL is a terminal-based interactive story application built with Go, [Bubble Tea](https://github.com/charmbracelet/bubbletea), and [Lip Gloss](https://github.com/charmbracelet/lipgloss).
 
+Many thanks to [Claude](https://www.anthropic.com/claude-code) for writing [The Great Gopher Bake-Off](./stories/bakeoff.json), [The Mystery of the Lost Repository](./stories/mystery.json), and [The Time-Traveling Tunnel](./stories/timetravel.json).
+
 ## Features
 
 - Multiple story selection from a menu
