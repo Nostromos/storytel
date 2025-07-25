@@ -1,62 +1,102 @@
-# Exercise #3: Choose your own adventure
+![StoryTEL Logo](./logo.png)
+<h2 align="center"><i>A Terminal-based Choose Your Own Adventure Game</i></h2>
 
-[![exercise status: released](https://img.shields.io/badge/exercise%20status-released-green.svg?style=for-the-badge)](https://gophercises.com/exercises/cyoa) [![demo: ->](https://img.shields.io/badge/demo-%E2%86%92-blue.svg?style=for-the-badge)](https://gophercises.com/demos/cyoa/)
+<p align="center">
+  <a href="https://golang.org/doc/go1.14">
+    <img alt="Go" src="https://img.shields.io/github/go-mod/go-version/cdkini/Okra?style=flat-square"
+  </a> 
+  <a href="https://opensource.org/licenses/MIT">
+    <img alt="License" src="https://img.shields.io/github/license/cdkini/Okra?color=red&style=flat-square"
+  </a>
+  <a>
+    <img alt="StoryTEL" src="https://img.shields.io/badge/version-v1.0.0-yellow?style=flat-square"
+  </a>
+</p>
 
 
-## Exercise details
 
-[Choose Your Own Adventure](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure) is (was?) a series of books intended for children where as you read you would occasionally be given options about how you want to proceed. For instance, you might read about a boy walking in a cave when he stumbles across a dark passage or a ladder leading to an upper level and the reader will be presented with two options like:
+## Intro
 
-- Turn to page 44 to go up the ladder.
-- Turn to page 87 to venture down the dark passage.
+StoryTEL is a terminal-based interactive story application built with Go, [Bubble Tea](https://github.com/charmbracelet/bubbletea), and [Lip Gloss](https://github.com/charmbracelet/lipgloss).
 
-The goal of this exercise is to recreate this experience via a web application where each page will be a portion of the story, and at the end of every page the user will be given a series of options to choose from (or be told that they have reached the end of that particular story arc).
+## Features
 
-Stories will be provided via a JSON file with the following format:
+- Multiple story selection from a menu
+- Interactive story navigation with keyboard controls
+- Beautiful terminal UI with styled text boxes
+- Support for custom story files in JSON format
+
+## Installation
+
+```bash
+go build -o cyoa ./cmd/cyoa
+```
+
+## Usage
+
+Run the application:
+```bash
+./cyoa
+```
+
+### Controls
+
+**Story Selection Mode:**
+- `↑/↓` or `j/k` - Navigate through stories
+- `Enter` - Select a story
+- `q` - Quit
+
+**Story Playing Mode:**
+- `↑/↓` or `j/k` - Navigate through options
+- `Enter` - Select an option
+- `q` - Quit
+
+## Story Format
+
+Stories are stored as JSON files in the `stories/` directory. Each story follows this structure:
 
 ```json
 {
-  // Each story arc will have a unique key that represents
-  // the name of that particular arc.
-  "story-arc": {
-    "title": "A title for that story arc. Think of it like a chapter title.",
+  "chapter-name": {
+    "title": "Chapter Title",
     "story": [
-      "A series of paragraphs, each represented as a string in a slice.",
-      "This is a new paragraph in this particular story arc."
+      "First paragraph",
+      "Second paragraph"
     ],
-    // Options will be empty if it is the end of that
-    // particular story arc. Otherwise it will have one or
-    // more JSON objects that represent an "option" that the
-    // reader has at the end of a story arc.
     "options": [
       {
-        "text": "the text to render for this option. eg 'venture down the dark passage'",
-        "arc": "the name of the story arc to navigate to. This will match the story-arc key at the very root of the JSON document"
+        "text": "Option text",
+        "arc": "next-chapter-name"
       }
     ]
   }
 }
 ```
 
-*See [gopher.json](https://github.com/gophercises/cyoa/blob/master/gopher.json) for a real example of a JSON story. I find that seeing the real JSON file really helps answer any confusion or questions about the JSON format.*
+## Adding New Stories
 
-You are welcome to design the code however you want. You can put everything in a single `main` package, or you can break the story into its own package and use that when creating your http handlers.
+1. Create a new JSON file in the `stories/` directory
+2. Follow the story format above
+3. Include an "intro" chapter as the entry point
+4. The application will automatically detect and list new stories
 
-The only real requirements are:
+## Project Structure
 
-1. Use the `html/template` package to create your HTML pages. Part of the purpose of this exercise is to get practice using this package.
-2. Create an `http.Handler` to handle the web requests instead of a handler function.
-3. Use the `encoding/json` package to decode the JSON file. You are welcome to try out third party packages afterwards, but I recommend starting here.
+```
+.
+├── cmd/cyoa/          # Main application entry point
+├── pkg/
+│   ├── parser/        # JSON story parser
+│   ├── tui/           # Terminal UI components
+│   └── types/         # Shared type definitions
+└── stories/           # Story JSON files
+```
 
-A few things worth noting:
+## Dependencies
 
-- Stories could be cyclical if a user chooses options that keep leading to the same place. This isn't likely to cause issues, but keep it in mind.
-- For simplicity, all stories will have a story arc named "intro" that is where the story starts. That is, every JSON file will have a key with the value `intro` and this is where your story should start.
-- Matt Holt's JSON-to-Go is a really handy tool when working with JSON in Go! Check it out - <https://mholt.github.io/json-to-go/>
+- [Bubble Tea](https://github.com/charmbracelet/bubbletea) - Terminal UI framework
+- [Lip Gloss](https://github.com/charmbracelet/lipgloss) - Terminal styling
 
-## Bonus
+## License
 
-As a bonus exercises you can also:
-
-1. Create a command-line version of our Choose Your Own Adventure application where stories are printed out to the terminal and options are picked via typing in numbers ("Press 1 to venture ...").
-2. Consider how you would alter your program in order to support stories starting form a story-defined arc. That is, what if all stories didn't start on an arc named `intro`? How would you redesign your program or restructure the JSON? This bonus exercises is meant to be as much of a thought exercise as an actual coding one.
+This project is part of the Gophercises exercise series.
